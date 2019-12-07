@@ -6,18 +6,16 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
+import NavBar from "./Nav/Nav"
 
 const Layout = ({ children }) => {
-
   return (
     <>
-        <main>{children}</main>
-        <footer>
-        </footer>
+      <NavBar></NavBar>
+      <main>{children}</main>
+      <footer></footer>
     </>
   )
 }
-
 
 export default Layout
