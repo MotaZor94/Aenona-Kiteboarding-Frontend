@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import NavBar from "./Nav/Nav"
+import NavBar from "./WhiteBox/WhiteBox"
 
 const Layout = ({ children }) => {
   return (

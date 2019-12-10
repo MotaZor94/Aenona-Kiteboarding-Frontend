@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components"
-import { pxToEm, pxToPx } from "./helpers/utility"
+import { pxToEm, pxToPx } from "./src/helpers/utility"
 
 const unit = 10
 
@@ -77,7 +77,7 @@ export const theme = {
         dark: (opacity = 1) => `rgba(91, 142, 128, ${opacity})`,
       },
       blue: {
-        dark: (opacity = 1) => `rgba(63, 61, 86, ${opacity})`,
+        normal: "#5C748E",
       },
       white: {
         normal: (opacity = 1) => `rgba(255,255,255, ${opacity})`,
