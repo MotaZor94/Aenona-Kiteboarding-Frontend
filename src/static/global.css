@@ -1,0 +1,160 @@
+/*TODO: add our fonts imports also hosted here in public */
+/*@font-face {*/
+/*    font-family: "Austin";*/
+/*    font-weight: normal;*/
+/*    src: url("/static/fonts/Austin-Roman.woff") format("woff");*/
+/*}*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    /* border: 2px solid red; */
+}
+
+body {
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([class]) {
+    color: rgba(216, 12, 112, 1);
+}
+
+a[href*="mailto"] {
+    word-break: break-word;
+}
+
+a:not([class]):hover {
+    text-decoration: underline;
+}
+
+img {
+    vertical-align: bottom;
+    max-width: 100%;
+}
+
+address {
+    font-style: normal;
+}
+
+button,
+select,
+input {
+    font-family: inherit;
+    font-size: inherit;
+    text-transform: inherit;
+    color: inherit;
+    border: 0;
+    background: none;
+    letter-spacing: inherit;
+    line-height: inherit;
+}
+
+button:not([class]) {
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+fieldset {
+    border: 0;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+body *::-webkit-scrollbar {
+    width: 0.4em;
+    height: 0.4em;
+}
+
+body *::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body *::-webkit-scrollbar-thumb {
+    border-radius: 0.2em;
+    background-color: rgba(216, 12, 112, 1);
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
+/* nprogress */
+#nprogress {
+    pointer-events: none;
+}
+
+#nprogress .bar {
+    background: rgba(216, 12, 112, 1);
+    position: fixed;
+    z-index: 1031;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+#nprogress .peg {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(216, 12, 112, 1), 0 0 5px rgba(216, 12, 112, 1);
+    opacity: 1;
+    transform: rotate(3deg) translate(0px, -4px);
+}
+
+#nprogress .spinner {
+    display: block;
+    position: fixed;
+    z-index: 1031;
+    top: 15px;
+    right: 15px;
+}
+
+#nprogress .spinner-icon {
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    border: solid 2px transparent;
+    border-top-color: rgba(216, 12, 112, 1);
+    border-left-color: rgba(216, 12, 112, 1);
+    border-radius: 50%;
+    animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+    overflow: hidden;
+    position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+    position: absolute;
+}
+
+@keyframes nprogress-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
