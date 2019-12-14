@@ -3,10 +3,14 @@ import PropTypes from 'prop-types'
 import Card from '../Card/Card'
 import StyledButton from './StyledButton'
 
-const Button = ({ color, label, onClick }) => {
+const Button = ({
+ color, label, onClick, id 
+}) => {
   return (
     <Card>
-      <StyledButton onClick={onClick} color={color}>{`${label}`}</StyledButton>
+      <StyledButton onClick={() => onClick(id)} color={color}>
+        {`${label}`}
+      </StyledButton>
     </Card>
   )
 }
@@ -14,7 +18,8 @@ const Button = ({ color, label, onClick }) => {
 Button.propTypes = {
   color:   PropTypes.string,
   label:   PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired
+  onClick: PropTypes.func.isRequired,
+  id:      PropTypes.string.isRequired
 }
 
 export default Button
