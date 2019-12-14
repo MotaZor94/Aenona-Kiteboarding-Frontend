@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components"
-import { theme } from "../../../theme"
+import styled, { css } from 'styled-components'
+import { theme } from '../../../theme'
 
 const WhiteBox = styled.div`
   display: flex;
@@ -13,8 +13,7 @@ const WhiteBox = styled.div`
   /* box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.25); */
   z-index: 20;
   height: 3.6em;
-  ${({ top }) =>
-    top
+  ${({ top }) => top
       ? css`
           top: 0;
           border-bottom: 0.5px solid ${theme.colors.palette.blue.normal};
@@ -25,6 +24,4 @@ const WhiteBox = styled.div`
         `}
 `
 
-export const Styled = {
-  WhiteBox,
-}
+export default WhiteBox
