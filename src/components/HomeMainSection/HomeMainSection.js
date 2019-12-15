@@ -6,7 +6,9 @@ import img from '../../images/NinMain.png'
 
 const HomeMainSection = () => (
   <MainSection backgroundImg={img}>
-    <MainImgWrap img={img} />
+    <MainImgWrap>
+      <img style={{ width: '100%' }} src={img} alt="Nin panorama" />
+    </MainImgWrap>
     <MainPanel />
   </MainSection>
 )

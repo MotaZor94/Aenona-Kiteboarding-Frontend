@@ -3,8 +3,12 @@ import weatherImg from '../../images/weather.png'
 
 const WeatherImgAndTemp = () => {
   return (
-    <div style={{ height: '100px' }}>
-      <img src={weatherImg} alt="weather graphic" />
+    <div>
+      <img
+        style={{ width: '100%', height: '100%' }}
+        src={weatherImg}
+        alt="weather illustration"
+      />
       <br />
       17.7C
     </div>
