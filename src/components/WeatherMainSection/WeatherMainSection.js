@@ -1,8 +1,8 @@
-import React from "react"
-import MainSection from "../MainSection/MainSection"
-import MainImgWrap from "../MainImgWrap/MainImgWrap"
-import MainPanel from "../MainPanel/MainPanel"
-import WeatherImgAndTemp from "../WeatherImgAndTemp/WeatherImgAndTemp"
+import React from 'react'
+import MainSection from '../MainSection/MainSection'
+import MainImgWrap from '../MainImgWrap/MainImgWrap'
+import MainPanel from '../MainPanel/MainPanel'
+import WeatherImgAndTemp from '../WeatherImgAndTemp/WeatherImgAndTemp'
 
 // TODO: Not displaying mainImgWrap properly
 
