@@ -4,11 +4,8 @@ export default styled.div`
   ${({ weather }) => weather
       ? css`
           @media (min-width: 800px) {
-            width: 30%;
+            width: 40%;
             height: 100px;
-            margin: 10% 10% 10% 50%;
-            max-width: 30%;
-            max-height: 100%;
           }
         `
       : css`

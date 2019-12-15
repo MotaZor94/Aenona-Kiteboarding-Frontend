@@ -9,7 +9,7 @@ const MainImgWrap = ({ img, weather }) => {
     img
   )
 
-  return <StyledMainImgWrap weather>{content}</StyledMainImgWrap>
+  return <StyledMainImgWrap weather={weather}>{content}</StyledMainImgWrap>
 }
 
 MainImgWrap.propTypes = {

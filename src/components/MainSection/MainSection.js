@@ -4,7 +4,7 @@ import StyledMainSection from './StyledMainSection'
 
 const MainSection = ({ children, backgroundImg, weather }) => {
   return (
-    <StyledMainSection backgroundImg={backgroundImg}>
+    <StyledMainSection backgroundImg={backgroundImg} weather={weather}>
       {children}
     </StyledMainSection>
   )

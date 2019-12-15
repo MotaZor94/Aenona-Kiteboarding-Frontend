@@ -5,7 +5,7 @@ import MainPanel from '../MainPanel/MainPanel'
 import img from '../../images/NinMain.png'
 
 const HomeMainSection = () => (
-  <MainSection>
+  <MainSection backgroundImg={img}>
     <MainImgWrap img={img} />
     <MainPanel />
   </MainSection>

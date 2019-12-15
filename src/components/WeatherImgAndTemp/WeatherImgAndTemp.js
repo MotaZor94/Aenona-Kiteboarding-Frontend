@@ -1,8 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import weatherImg from '../../images/weather.png'
 
-const WeatherImgAndTemp = props => {
+const WeatherImgAndTemp = () => {
   return (
     <div style={{ height: '100px' }}>
       <img src={weatherImg} alt="weather graphic" />
@@ -11,7 +10,5 @@ const WeatherImgAndTemp = props => {
     </div>
   )
 }
-
-WeatherImgAndTemp.propTypes = {}
 
 export default WeatherImgAndTemp
