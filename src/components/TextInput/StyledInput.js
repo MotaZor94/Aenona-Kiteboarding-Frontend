@@ -8,5 +8,6 @@ export default styled.input`
 
   ::placeholder {
     color: #5c748e;
+    opacity: 0.4;
   }
 `
