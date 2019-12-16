@@ -7,7 +7,9 @@ import WeatherImgAndTemp from '../WeatherImgAndTemp/WeatherImgAndTemp'
 const WeatherMainSection = () => {
   return (
     <MainSection weather>
-      <MainImgWrap img={WeatherImgAndTemp} weather />
+      <MainImgWrap weather>
+        <WeatherImgAndTemp />
+      </MainImgWrap>
       <MainPanel />
     </MainSection>
   )

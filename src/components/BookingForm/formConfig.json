@@ -1,0 +1,7 @@
+{
+  "singeLine": [
+    { "type": "email", "name": "email" },
+    { "type": "text", "name": "name" }
+  ],
+  "multipleLine": [{ "type": "text", "name": "message" }]
+}

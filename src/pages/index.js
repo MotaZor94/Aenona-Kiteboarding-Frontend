@@ -17,7 +17,7 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
-      <WeatherMainSection />
+      <HomeMainSection />
       <Link to="/">Go to page 2</Link>
     </>
   )

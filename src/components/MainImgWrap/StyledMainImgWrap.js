@@ -1,11 +1,12 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from "styled-components"
 
 export default styled.div`
-  ${({ weather }) => weather
+  ${({ weather }) =>
+    weather
       ? css`
           @media (min-width: 800px) {
-            width: 40%;
-            height: 100px;
+            width: 300px;
+            height: 60vh;
           }
         `
       : css`
@@ -16,3 +17,4 @@ export default styled.div`
 
   border: 1px orange solid;
 `
+// width: 40%;

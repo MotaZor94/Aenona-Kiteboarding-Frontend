@@ -3,11 +3,16 @@ import MainSection from '../MainSection/MainSection'
 import MainImgWrap from '../MainImgWrap/MainImgWrap'
 import MainPanel from '../MainPanel/MainPanel'
 import img from '../../images/NinMain.png'
+import BookingForm from '../BookingForm/BookingForm'
 
 const HomeMainSection = () => (
   <MainSection backgroundImg={img}>
-    <MainImgWrap img={img} />
-    <MainPanel />
+    <MainImgWrap>
+      <img style={{ width: '100%' }} src={img} alt="Nin panorama" />
+    </MainImgWrap>
+    <MainPanel>
+      <BookingForm />
+    </MainPanel>
   </MainSection>
 )
 
