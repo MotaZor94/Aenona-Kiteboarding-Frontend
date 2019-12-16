@@ -1,9 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-export default styled.input.attrs({
-  type: 'text' // `${props.type}`,
-  // value: `${props.value}`
-})`
-  border: 1px light-grey solid;
+export default styled.input`
+  border: 1px solid #5c748e;
   border-radius: 3px;
+  width: 100%;
 `
