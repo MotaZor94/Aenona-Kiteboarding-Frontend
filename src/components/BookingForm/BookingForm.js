@@ -7,16 +7,14 @@ import Button from "../Button/Button"
 import Text from "../Text/Text"
 
 const BookingForm = ({ onChange }) => {
-  const isDesktop = window.innerWidth > 786
+  const isDesktop = window.innerWidth > 800
   return (
     <StyledFormWrapper>
       {isDesktop ? (
-        <Text as="h1" Blue>
+        <Text textStyle={"Paragraph"} as="h1" Blue>
           Discover the Croatia’s top kiteboarding location
         </Text>
-      ) : (
-        ""
-      )}
+      ) : null}
       <br />
       First Name
       <TextInput

@@ -1,8 +1,12 @@
 import React from "react"
 import { Styled } from "./StyledText"
 
-const NavBar = ({ children, as }) => {
-  return <Styled.Text as={as}>{children}</Styled.Text>
+const Text = ({ children, as, color }) => {
+  return (
+    <Styled.Text color={color} as={as}>
+      {children}
+    </Styled.Text>
+  )
 }
 
-export default NavBar
+export default Text

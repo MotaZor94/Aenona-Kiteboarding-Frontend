@@ -8,6 +8,7 @@ import BookingForm from "../BookingForm/BookingForm"
 const HomeMainSection = () => (
   <MainSection backgroundImg={img}>
     <MainImgWrap>
+    
       {/* <Text>Hello</Text> */}
       <img
         style={{ width: "100%", objectFit: "cover", height: "60vh" }}
