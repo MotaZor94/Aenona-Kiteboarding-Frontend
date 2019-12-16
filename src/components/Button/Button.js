@@ -5,11 +5,9 @@ import StyledButton from "./StyledButton"
 
 const Button = ({ color, label, onClick, id, iswhite }) => {
   return (
-    <Card>
-      <StyledButton iswhite={iswhite} onClick={() => onClick(id)} color={color}>
-        {`${label}`}
-      </StyledButton>
-    </Card>
+    <StyledButton iswhite={iswhite} onClick={() => onClick(id)} color={color}>
+      {`${label}`}
+    </StyledButton>
   )
 }
 

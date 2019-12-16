@@ -11,39 +11,49 @@ const BookingForm = ({ onChange }) => {
   return (
     <StyledFormWrapper>
       {isDesktop ? (
-        <Text textStyle={"Paragraph"} as="h1" Blue>
+        <Text as="h1" Blue>
           Discover the Croatia’s top kiteboarding location
         </Text>
       ) : null}
       <br />
-      First Name
+      <Text as="p" blue isBold>
+        FIRST NAME
+      </Text>
       <TextInput
         type="text"
         placeholder="John"
         onChange={({ target }) => console.log(target.value)}
       />
       <br />
-      Last Name
+      <Text as="p" blue isBold>
+        LAST NAME
+      </Text>
       <TextInput
         type="text"
         placeholder="Smith"
         onChange={({ target }) => console.log(target.value)}
       />
       <br />
-      Email
+      <Text as="p" blue isBold>
+        EMAIL
+      </Text>
       <TextInput
         type="email"
         placeholder="Johnsmith@example.com"
         onChange={({ target }) => console.log(target.value)}
       />
       <br />
-      Your message
+      <Text as="p" blue isBold>
+        MESSAGE
+      </Text>
       <TextInput
         type="text"
         onChange={({ target }) => console.log(target.value)}
       />
       <br />
       <Button label="BOOK NOW" />
+      <br />
+      <br />
       <Button iswhite label="WEATHER REPORT" />
     </StyledFormWrapper>
   )

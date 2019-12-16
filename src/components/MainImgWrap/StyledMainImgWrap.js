@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components"
 
 export default styled.div`
+  ${({ isRelative }) => isRelative && `position: relative`}
   ${({ weather }) =>
     weather
       ? css`

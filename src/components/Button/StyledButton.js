@@ -7,6 +7,8 @@ export default styled.button`
   font-family: Avenir;
   font-weight: 800;
   width: 100%;
+  height: 36px;
+  border-radius: 3px;
 
   &:active {
     opacity: 0.8;
