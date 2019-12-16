@@ -17,6 +17,9 @@ export default styled.div`
       : css`
           @media (min-width: 800px) {
             background-image: url(${backgroundImg});
+            height: 600px;
+            background-size: cover;
+            background-position: bottom;
           }
         `}
 `
