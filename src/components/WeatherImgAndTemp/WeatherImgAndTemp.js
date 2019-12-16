@@ -1,12 +1,12 @@
 import React from 'react'
-import weatherImg from '../../images/weather.png'
+import weatherBase from '../../images/mainIllustration/main.png'
 
 const WeatherImgAndTemp = () => {
   return (
     <div>
       <img
         style={{ width: '100%', height: '100%' }}
-        src={weatherImg}
+        src={weatherBase}
         alt="weather illustration"
       />
       <br />

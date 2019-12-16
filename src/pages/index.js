@@ -18,6 +18,7 @@ const IndexPage = () => {
     <>
       <SEO title="Home" />
       <HomeMainSection />
+      <WeatherMainSection />
       <Link to="/">Go to page 2</Link>
     </>
   )
