@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components"
 
 export default styled.div`
-  border: 1px green solid;
   display: flex;
   flex-direction: column;
   ${({ backgroundImg, weather }) =>
@@ -16,8 +15,11 @@ export default styled.div`
         `
       : css`
           @media (min-width: 800px) {
+            padding: 4em;
+            display: flex;
+            justify-content: center;
             background-image: url(${backgroundImg});
-            height: 600px;
+            height: 90vh;
             background-size: cover;
             background-position: bottom;
           }

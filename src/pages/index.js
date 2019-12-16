@@ -20,6 +20,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <WhiteBox top />
       <HomeMainSection />
+      <WhiteBox />
       <Link to="/">Go to page 2</Link>
     </>
   )

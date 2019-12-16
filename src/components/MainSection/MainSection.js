@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import StyledMainSection from './StyledMainSection'
+import React from "react"
+import PropTypes from "prop-types"
+import StyledMainSection from "./StyledMainSection"
 
 const MainSection = ({ children, backgroundImg, weather }) => {
   return (
@@ -11,9 +11,9 @@ const MainSection = ({ children, backgroundImg, weather }) => {
 }
 
 MainSection.propTypes = {
-  children:      PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
   backgroundImg: PropTypes.node,
-  weather:       PropTypes.bool
+  weather: PropTypes.bool,
 }
 
 export default MainSection
