@@ -19,7 +19,7 @@ export default styled.div`
             display: flex;
             justify-content: center;
             background-image: url(${backgroundImg});
-            height: 90vh;
+            height: 100vh;
             background-size: cover;
             background-position: bottom;
           }
