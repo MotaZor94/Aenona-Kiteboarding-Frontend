@@ -1,25 +1,22 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Card from '../Card/Card'
-import StyledButton from './StyledButton'
+import React from "react"
+import PropTypes from "prop-types"
+import Card from "../Card/Card"
+import StyledButton from "./StyledButton"
 
-const Button = ({
- color, label, onClick, id 
-}) => {
+const Button = ({ color, label, onClick, id, iswhite }) => {
   return (
-    <Card>
-      <StyledButton onClick={() => onClick(id)} color={color}>
-        {`${label}`}
-      </StyledButton>
-    </Card>
+    <StyledButton iswhite={iswhite} onClick={() => onClick(id)} color={color}>
+      {`${label}`}
+    </StyledButton>
   )
 }
 
 Button.propTypes = {
-  color:   PropTypes.string,
-  label:   PropTypes.string.isRequired,
+  color: PropTypes.string,
+  label: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
-  id:      PropTypes.string.isRequired
+  id: PropTypes.string.isRequired,
+  iswhite: PropTypes.bool,
 }
 
 export default Button

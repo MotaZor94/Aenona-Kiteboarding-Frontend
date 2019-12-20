@@ -1,7 +1,10 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 const Image = styled.img`
-  width: 100%;
   height: 100%;
+  /* padding: 1em; */
+  ${({ width }) => css`
+    width: ${width};
+  `}
 `
 
 export const Styled = {
