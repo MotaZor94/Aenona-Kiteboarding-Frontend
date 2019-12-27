@@ -1,12 +1,13 @@
-import styled, { css } from "styled-components"
+import styled, { css } from 'styled-components'
 
 export default styled.div`
-  ${({ isRelative }) => isRelative && `position: relative`}
+  ${({ isRelative }) => isRelative && 'position: relative'}
   ${({ weather }) =>
     weather
       ? css`
           @media (min-width: 800px) {
-            width: 300px;
+            border: 1px red solid;
+            width: 400px;
             height: 60vh;
           }
         `

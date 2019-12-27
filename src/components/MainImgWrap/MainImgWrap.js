@@ -1,6 +1,6 @@
-import React from "react"
-import PropTypes from "prop-types"
-import StyledMainImgWrap from "./StyledMainImgWrap"
+import React from 'react'
+import PropTypes from 'prop-types'
+import StyledMainImgWrap from './StyledMainImgWrap'
 
 const MainImgWrap = ({ children, weather, isRelative = false }) => (
   <StyledMainImgWrap isRelative={isRelative} weather={weather}>

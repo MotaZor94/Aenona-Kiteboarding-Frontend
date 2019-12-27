@@ -10,8 +10,6 @@ import SEO from '../components/seo'
 // import Logo from "../static/main.png"
 import '../static/global.css'
 import HomeMainSection from '../components/HomeMainSection/HomeMainSection'
-
-import WeatherMainSection from '../components/WeatherMainSection/WeatherMainSection'
 import WhiteBox from '../components/WhiteBox/WhiteBox'
 import Image from '../components/Image/Image'
 import LogoText from '../static/Tekst.png'
@@ -53,8 +51,7 @@ const IndexPage = () => {
         <Image src={LogoText} width="120px" />
       </WhiteBox>
       <HomeMainSection />
-      <WeatherMainSection />
-      <Link to="/">Go to page 2</Link>
+      <Link to="/weather">Go to Weather</Link>
     </>
   )
 }
