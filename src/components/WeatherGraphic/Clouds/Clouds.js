@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import cloud from '../../images/mainIllustration/cloud.png'
+import Cloud from './Cloud'
 
 const Clouds = ({ amount }) => {
   if (!amount || amount === 0) {
@@ -9,14 +9,7 @@ const Clouds = ({ amount }) => {
 
   const clouds = []
   for (let i = 0; i < amount; i++) {
-    clouds.push(
-      <img
-        src={cloud}
-        alt="cloud"
-        className={`cloud${i}`}
-        style={{ posiiton: 'absolute', top: '7em' }}
-      />
-    )
+    clouds.push(<Cloud index={i} />)
   }
   return clouds
 }
