@@ -9,7 +9,7 @@ const Clouds = ({ amount }) => {
 
   const clouds = []
   for (let i = 0; i <= amount; i++) {
-    clouds.push(<Cloud />)
+    clouds.push(<Cloud index={i} />)
   }
   return clouds
 }
