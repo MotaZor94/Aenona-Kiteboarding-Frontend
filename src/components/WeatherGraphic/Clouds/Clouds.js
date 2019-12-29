@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 import Cloud from './Cloud'
 
 const Clouds = ({ amount }) => {
-  if (!amount || amount === 0) {
+  if (!amount) {
     return null
   }
 
   const clouds = []
-  for (let i = 0; i < amount; i++) {
-    clouds.push(<Cloud index={i} />)
+  for (let i = 0; i <= amount; i++) {
+    clouds.push(<Cloud />)
   }
   return clouds
 }
