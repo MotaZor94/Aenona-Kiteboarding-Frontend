@@ -3,7 +3,7 @@ import MainSection from '../MainSection/MainSection'
 import MainImgWrap from '../MainImgWrap/MainImgWrap'
 import MainPanel from '../MainPanel/MainPanel'
 import WeatherImgAndTemp from '../WeatherImgAndTemp/WeatherImgAndTemp'
-import BookingForm from '../BookingForm/BookingForm'
+import WeatherLeftSection from '../WeatherLeftSection/WeatherLeftSection'
 
 const WeatherMainSection = () => {
   return (
@@ -12,7 +12,7 @@ const WeatherMainSection = () => {
         <WeatherImgAndTemp />
       </MainImgWrap>
       <MainPanel>
-        <BookingForm />
+        <WeatherLeftSection />
       </MainPanel>
     </MainSection>
   )

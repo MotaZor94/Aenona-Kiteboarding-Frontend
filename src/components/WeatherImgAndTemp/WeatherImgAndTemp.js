@@ -1,12 +1,17 @@
 import React from 'react'
 import WeatherGraphic from '../WeatherGraphic/WeatherGraphic'
+import Text from '../Text/Text'
 
 const WeatherImgAndTemp = () => {
   return (
     <div>
       <WeatherGraphic />
       <br />
-      <span>17.7C</span>
+      <br />
+      <Text centered isBold>
+        23.3 C
+      </Text>
+      <Text centered>Clear</Text>
     </div>
   )
 }
