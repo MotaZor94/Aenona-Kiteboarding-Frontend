@@ -1,22 +1,29 @@
-import styled, { css } from "styled-components"
+import styled, { css } from 'styled-components'
 
 const Text = styled.div`
   font-size: 1.5em;
   color: #5c748e;
-  ${({ isAbsolute }) => isAbsolute && `position: absolute`}
+  ${({ centered }) => centered && 'text-align: center'}
+  ${({ isAbsolute }) => isAbsolute && 'position: absolute'}
   ${({ as }) =>
-    as === "h1" &&
+    as === 'h1' &&
     css`
       color: #5c748e;
       font-weight: 800;
     `}
   ${({ as }) =>
-    as === "p" &&
+    as === 'weatherData' &&
+    css`
+      font-size: 1em;
+      font-weight: 800;
+    `}
+  ${({ as }) =>
+    as === 'p' &&
     css`
       font-size: 1em;
     `}
-    ${({ isWhite }) => isWhite && `color:white;`}
-    ${({ isBold }) => isBold && `font-weight: 800;`}
+    ${({ isWhite }) => isWhite && 'color:white;'}
+    ${({ isBold }) => isBold && 'font-weight: 800;'}
     ${({ isPhone }) =>
       isPhone &&
       css`

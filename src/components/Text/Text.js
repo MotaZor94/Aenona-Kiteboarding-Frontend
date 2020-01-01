@@ -1,5 +1,5 @@
-import React from "react"
-import { Styled } from "./StyledText"
+import React from 'react'
+import { Styled } from './StyledText'
 
 const Text = ({
   children,
@@ -9,6 +9,7 @@ const Text = ({
   isWhite,
   isBold = false,
   isPhone = false,
+  centered = false,
 }) => {
   return (
     <Styled.Text
@@ -18,6 +19,7 @@ const Text = ({
       isAbsolute={isAbsolute}
       color={color}
       as={as}
+      centered={centered}
     >
       {children}
     </Styled.Text>
