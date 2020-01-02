@@ -5,8 +5,8 @@ export default styled.div`
   ${({ weather }) =>
     weather
       ? css`
+          overflow: hidden;
           @media (min-width: 800px) {
-            border: 1px red solid;
             width: 400px;
             height: 60vh;
           }
