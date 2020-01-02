@@ -8,7 +8,6 @@ export default styled.div`
           overflow: hidden;
           @media (min-width: 800px) {
             width: 400px;
-            height: 60vh;
           }
         `
       : css`
