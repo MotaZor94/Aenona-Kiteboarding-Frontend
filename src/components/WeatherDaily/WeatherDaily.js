@@ -5,7 +5,7 @@ import Card from '../Card/Card'
 
 const WeatherDaily = props => {
   return (
-    <Card flexDirection="column" margin="5px" padding="15px">
+    <Card flexDirection="column" padding="15px">
       <WeatherDay />
       <WeatherDay />
       <WeatherDay />
