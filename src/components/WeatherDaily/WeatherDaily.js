@@ -1,17 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import WeatherDay from './WheatherDay'
+import Card from '../Card/Card'
 
 const WeatherDaily = props => {
   return (
-    <div>
+    <Card flexDirection="column" margin="5px" padding="15px">
       <WeatherDay />
       <WeatherDay />
       <WeatherDay />
       <WeatherDay />
       <WeatherDay />
       <WeatherDay />
-    </div>
+    </Card>
   )
 }
 
