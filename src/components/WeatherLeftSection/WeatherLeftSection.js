@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import WeatherHourly from '../WeatherHourly/WeatherHourly'
 import WeatherDaily from '../WeatherDaily/WeatherDaily'
+import Text from '../Text/Text'
 
 const dummyData = [
   {
@@ -38,8 +39,13 @@ const dummyData = [
 
 const WeatherLeftSection = props => {
   return (
-    <div>
+    <div style={{ padding: '5px' }}>
+      <Text isBold>Get to know your holidays in advance</Text>
+      <br />
+      <Text>Today hourly</Text>
       <WeatherHourly data={dummyData} />
+      <br />
+      <Text>This week</Text>
       <WeatherDaily />
     </div>
   )

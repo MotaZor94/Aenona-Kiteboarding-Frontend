@@ -12,6 +12,7 @@ const WeatherImgAndTemp = () => {
         23.3 C
       </Text>
       <Text centered>Clear</Text>
+      <br />
     </div>
   )
 }
