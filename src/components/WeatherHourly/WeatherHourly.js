@@ -6,7 +6,7 @@ import Card from '../Card/Card'
 
 const WeatherHourly = ({ data }) => {
   return (
-    <Card flexDirection="row" margin="5px" scroll="x">
+    <Card flexDirection="row" scroll="x">
       {data.map(item => (
         <div
           style={{
