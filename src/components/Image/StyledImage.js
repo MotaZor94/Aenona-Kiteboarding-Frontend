@@ -1,7 +1,8 @@
-import styled, { css } from "styled-components"
+import styled, { css } from 'styled-components'
+
 const Image = styled.img`
-  height: 100%;
   /* padding: 1em; */
+  overflow: hidden;
   ${({ width }) => css`
     width: ${width};
   `}
