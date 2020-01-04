@@ -4,16 +4,19 @@ import weatherBase from '../../images/mainIllustration/main.png'
 import Clouds from './Clouds/Clouds'
 import MoonOrSun from './MoonOrSun/MoonOrSun'
 
-const WeatherGraphic = props => {
+const WeatherGraphic = ({ moonOrSun, cloudCover }) => {
   return (
-    <>
-      <MoonOrSun sun />
-      <Clouds amount={4} />
+    <div>
+      <MoonOrSun moonOrSun={moonOrSun} />
+      <Clouds amount={cloudCover} />
       <img src={weatherBase} alt="beach illustration" />
-    </>
+    </div>
   )
 }
 
-WeatherGraphic.propTypes = {}
+WeatherGraphic.propTypes = {
+  moonOrSun: PropTypes.string.isRequired,
+  cloudCover: PropTypes.number.isRequired,
+}
 
 export default WeatherGraphic

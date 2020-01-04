@@ -11,20 +11,20 @@ const StyledMoonOrSun = styled.img`
   left: 0;
 `
 
-const MoonOrSun = ({ moon, sun }) => {
-  if (!moon && !sun) {
+const MoonOrSun = ({ moonOrSun }) => {
+  if (moonOrSun !== 'moon' && moonOrSun !== 'sun') {
     return null
   }
 
-  const img = moon ? Moon : Sun
-  const altText = moon ? 'Moon illustration' : 'Sun illustration'
+  const img = moonOrSun === 'moon' ? Moon : Sun
+  const altText =
+    moonOrSun === 'moon' ? 'Moon illustration' : 'Sun illustration'
 
   return <StyledMoonOrSun src={img} alt={altText} />
 }
 
 MoonOrSun.protoTypes = {
-  moon: PropTypes.bool,
-  sun: PropTypes.bool,
+  moonOrSun: PropTypes.string,
 }
 
 export default MoonOrSun
