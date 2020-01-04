@@ -21,7 +21,7 @@ const WeatherHourly = ({ data }) => {
           </Text>
           <WeatherIcon type="clearNight" />
           <Text isBold as="weatherData">
-            {`${item.temp} C`}
+            {`${item.temperature} C`}
           </Text>
           <Text as="weatherData">{`${item.windSpeed} kn`}</Text>
         </div>

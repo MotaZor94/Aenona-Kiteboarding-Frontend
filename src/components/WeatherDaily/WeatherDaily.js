@@ -3,19 +3,22 @@ import PropTypes from 'prop-types'
 import WeatherDay from './WheatherDay'
 import Card from '../Card/Card'
 
-const WeatherDaily = props => {
+const WeatherDaily = ({ data }) => {
   return (
     <Card flexDirection="column" padding="15px">
-      <WeatherDay />
-      <WeatherDay />
-      <WeatherDay />
-      <WeatherDay />
-      <WeatherDay />
-      <WeatherDay />
+      {data.map(x => (
+        <WeatherDay
+          day="monday"
+          temperature={x.temperature}
+          windSpeed={x.windSpeed}
+        />
+      ))}
     </Card>
   )
 }
 
-WeatherDaily.propTypes = {}
+WeatherDaily.propTypes = {
+  data: PropTypes.array.isRequired,
+}
 
 export default WeatherDaily

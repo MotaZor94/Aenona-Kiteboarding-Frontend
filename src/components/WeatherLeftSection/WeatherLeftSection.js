@@ -4,53 +4,23 @@ import WeatherHourly from '../WeatherHourly/WeatherHourly'
 import WeatherDaily from '../WeatherDaily/WeatherDaily'
 import Text from '../Text/Text'
 
-const dummyData = [
-  {
-    time: 22,
-    temp: 23.1,
-    windSpeed: 8.2,
-  },
-  {
-    time: 22,
-    temp: 23.1,
-    windSpeed: 8.2,
-  },
-  {
-    time: 22,
-    temp: 23.1,
-    windSpeed: 8.2,
-  },
-  {
-    time: 22,
-    temp: 23.1,
-    windSpeed: 8.2,
-  },
-  {
-    time: 22,
-    temp: 23.1,
-    windSpeed: 8.2,
-  },
-  {
-    time: 22,
-    temp: 23.1,
-    windSpeed: 8.2,
-  },
-]
-
-const WeatherLeftSection = props => {
+const WeatherLeftSection = ({ daily, hourly }) => {
   return (
     <div style={{ padding: '5px' }}>
       <Text isBold>Get to know your holidays in advance</Text>
       <br />
       <Text>Today hourly</Text>
-      <WeatherHourly data={dummyData} />
+      <WeatherHourly data={hourly} />
       <br />
       <Text>This week</Text>
-      <WeatherDaily />
+      <WeatherDaily data={daily} />
     </div>
   )
 }
 
-WeatherLeftSection.propTypes = {}
+WeatherLeftSection.propTypes = {
+  daily: PropTypes.array.isRequired,
+  hourly: PropTypes.array.isRequired,
+}
 
 export default WeatherLeftSection
