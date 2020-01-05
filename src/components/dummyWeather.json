@@ -1,0 +1,342 @@
+{
+  "current": {
+    "icon": "clear-day",
+    "summary": "Clear",
+    "windSpeed": "3.3",
+    "temperature": "9.7",
+    "cloudCover": 0,
+    "sunriseTime": 7,
+    "sunsetTime": 7
+  },
+  "hourly": [
+    {
+      "time": 16,
+      "icon": "clear-day",
+      "windSpeed": "3.3",
+      "temperature": "9.8"
+    },
+    {
+      "time": 17,
+      "icon": "clear-night",
+      "windSpeed": "3.2",
+      "temperature": "9.4"
+    },
+    {
+      "time": 18,
+      "icon": "clear-night",
+      "windSpeed": "3.0",
+      "temperature": "8.8"
+    },
+    {
+      "time": 19,
+      "icon": "clear-night",
+      "windSpeed": "2.8",
+      "temperature": "8.4"
+    },
+    {
+      "time": 20,
+      "icon": "clear-night",
+      "windSpeed": "2.8",
+      "temperature": "8.1"
+    },
+    {
+      "time": 21,
+      "icon": "clear-night",
+      "windSpeed": "2.7",
+      "temperature": "7.9"
+    },
+    {
+      "time": 22,
+      "icon": "clear-night",
+      "windSpeed": "2.7",
+      "temperature": "7.6"
+    },
+    {
+      "time": 23,
+      "icon": "clear-night",
+      "windSpeed": "2.7",
+      "temperature": "7.3"
+    },
+    {
+      "time": 0,
+      "icon": "clear-night",
+      "windSpeed": "2.7",
+      "temperature": "7.0"
+    },
+    {
+      "time": 1,
+      "icon": "clear-night",
+      "windSpeed": "2.7",
+      "temperature": "6.7"
+    },
+    {
+      "time": 2,
+      "icon": "clear-night",
+      "windSpeed": "2.5",
+      "temperature": "6.6"
+    },
+    {
+      "time": 3,
+      "icon": "clear-night",
+      "windSpeed": "2.3",
+      "temperature": "6.5"
+    },
+    {
+      "time": 4,
+      "icon": "clear-night",
+      "windSpeed": "2.2",
+      "temperature": "6.4"
+    },
+    {
+      "time": 5,
+      "icon": "clear-night",
+      "windSpeed": "2.4",
+      "temperature": "6.3"
+    },
+    {
+      "time": 6,
+      "icon": "clear-night",
+      "windSpeed": "2.8",
+      "temperature": "5.7"
+    },
+    {
+      "time": 7,
+      "icon": "clear-night",
+      "windSpeed": "3.2",
+      "temperature": "6.0"
+    },
+    {
+      "time": 8,
+      "icon": "clear-day",
+      "windSpeed": "3.4",
+      "temperature": "6.8"
+    },
+    {
+      "time": 9,
+      "icon": "clear-day",
+      "windSpeed": "3.7",
+      "temperature": "8.0"
+    },
+    {
+      "time": 10,
+      "icon": "clear-day",
+      "windSpeed": "4.3",
+      "temperature": "9.1"
+    },
+    {
+      "time": 11,
+      "icon": "clear-day",
+      "windSpeed": "6.0",
+      "temperature": "10.3"
+    },
+    {
+      "time": 12,
+      "icon": "clear-day",
+      "windSpeed": "8.1",
+      "temperature": "11.4"
+    },
+    {
+      "time": 13,
+      "icon": "clear-day",
+      "windSpeed": "9.5",
+      "temperature": "12.1"
+    },
+    {
+      "time": 14,
+      "icon": "clear-day",
+      "windSpeed": "9.7",
+      "temperature": "12.0"
+    },
+    {
+      "time": 15,
+      "icon": "clear-day",
+      "windSpeed": "9.2",
+      "temperature": "11.4"
+    },
+    {
+      "time": 16,
+      "icon": "clear-day",
+      "windSpeed": "8.4",
+      "temperature": "10.8"
+    },
+    {
+      "time": 17,
+      "icon": "clear-night",
+      "windSpeed": "7.3",
+      "temperature": "10.2"
+    },
+    {
+      "time": 18,
+      "icon": "clear-night",
+      "windSpeed": "6.0",
+      "temperature": "9.6"
+    },
+    {
+      "time": 19,
+      "icon": "clear-night",
+      "windSpeed": "4.9",
+      "temperature": "9.1"
+    },
+    {
+      "time": 20,
+      "icon": "clear-night",
+      "windSpeed": "4.3",
+      "temperature": "8.8"
+    },
+    {
+      "time": 21,
+      "icon": "clear-night",
+      "windSpeed": "3.9",
+      "temperature": "8.5"
+    },
+    {
+      "time": 22,
+      "icon": "clear-night",
+      "windSpeed": "3.8",
+      "temperature": "8.3"
+    },
+    {
+      "time": 23,
+      "icon": "clear-night",
+      "windSpeed": "3.8",
+      "temperature": "8.2"
+    },
+    {
+      "time": 0,
+      "icon": "partly-cloudy-night",
+      "windSpeed": "4.0",
+      "temperature": "8.3"
+    },
+    {
+      "time": 1,
+      "icon": "partly-cloudy-night",
+      "windSpeed": "4.4",
+      "temperature": "8.4"
+    },
+    {
+      "time": 2,
+      "icon": "partly-cloudy-night",
+      "windSpeed": "4.8",
+      "temperature": "8.6"
+    },
+    { "time": 3, "icon": "cloudy", "windSpeed": "5.2", "temperature": "8.7" },
+    { "time": 4, "icon": "cloudy", "windSpeed": "5.6", "temperature": "8.8" },
+    { "time": 5, "icon": "cloudy", "windSpeed": "6.0", "temperature": "8.8" },
+    {
+      "time": 6,
+      "icon": "partly-cloudy-night",
+      "windSpeed": "6.2",
+      "temperature": "8.6"
+    },
+    {
+      "time": 7,
+      "icon": "partly-cloudy-night",
+      "windSpeed": "6.5",
+      "temperature": "8.6"
+    },
+    {
+      "time": 8,
+      "icon": "partly-cloudy-day",
+      "windSpeed": "7.0",
+      "temperature": "8.8"
+    },
+    {
+      "time": 9,
+      "icon": "partly-cloudy-day",
+      "windSpeed": "7.6",
+      "temperature": "9.2"
+    },
+    {
+      "time": 10,
+      "icon": "partly-cloudy-day",
+      "windSpeed": "8.0",
+      "temperature": "9.7"
+    },
+    {
+      "time": 11,
+      "icon": "partly-cloudy-day",
+      "windSpeed": "7.9",
+      "temperature": "10.6"
+    },
+    {
+      "time": 12,
+      "icon": "partly-cloudy-day",
+      "windSpeed": "7.5",
+      "temperature": "11.5"
+    },
+    {
+      "time": 13,
+      "icon": "partly-cloudy-day",
+      "windSpeed": "7.1",
+      "temperature": "12.0"
+    },
+    {
+      "time": 14,
+      "icon": "partly-cloudy-day",
+      "windSpeed": "6.7",
+      "temperature": "11.8"
+    },
+    {
+      "time": 15,
+      "icon": "clear-day",
+      "windSpeed": "6.3",
+      "temperature": "11.3"
+    },
+    {
+      "time": 16,
+      "icon": "clear-day",
+      "windSpeed": "6.0",
+      "temperature": "10.8"
+    }
+  ],
+  "daily": [
+    {
+      "day": "Thursday",
+      "icon": "clear-day",
+      "windSpeed": "4.6",
+      "temperature": "8.1"
+    },
+    {
+      "day": "Friday",
+      "icon": "clear-day",
+      "windSpeed": "4.9",
+      "temperature": "10.2"
+    },
+    {
+      "day": "Saturday",
+      "icon": "partly-cloudy-day",
+      "windSpeed": "7.0",
+      "temperature": "9.8"
+    },
+    {
+      "day": "Sunday",
+      "icon": "clear-day",
+      "windSpeed": "11.0",
+      "temperature": "6.1"
+    },
+    {
+      "day": "Monday",
+      "icon": "clear-day",
+      "windSpeed": "7.3",
+      "temperature": "5.3"
+    },
+    {
+      "day": "Tuesday",
+      "icon": "partly-cloudy-day",
+      "windSpeed": "5.4",
+      "temperature": "7.0"
+    },
+    {
+      "day": "Wednesday",
+      "icon": "clear-day",
+      "windSpeed": "7.8",
+      "temperature": "7.9"
+    },
+    {
+      "day": "Thursday",
+      "icon": "clear-day",
+      "windSpeed": "4.1",
+      "temperature": "8.4"
+    }
+  ]
+}

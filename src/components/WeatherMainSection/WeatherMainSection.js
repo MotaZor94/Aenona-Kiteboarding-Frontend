@@ -5,6 +5,7 @@ import MainPanel from '../MainPanel/MainPanel'
 import WeatherImgAndTemp from '../WeatherImgAndTemp/WeatherImgAndTemp'
 import WeatherLeftSection from '../WeatherLeftSection/WeatherLeftSection'
 import getWeather from '../../fetch/weatherFetch'
+import dummyWeather from '../dummyWeather.json'
 
 class WeatherMainSection extends React.PureComponent {
   constructor(props) {
@@ -17,14 +18,15 @@ class WeatherMainSection extends React.PureComponent {
 
   async componentDidMount() {
     try {
-      this.setState({ weather: await getWeather() })
+      // this.setState({ weather: await getWeather() })
     } catch (error) {
       console.log(error) // snackbar to be added
     }
   }
 
   render() {
-    const { weather } = this.state
+    // const { weather } = this.state
+    const weather = dummyWeather
     if (!weather) {
       return null
     }
