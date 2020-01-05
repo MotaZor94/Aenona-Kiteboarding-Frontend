@@ -5,16 +5,29 @@ import WeatherIcon from '../WeatherIcon/WeatherIcon'
 import StyledWeatherDayWrap from './StyledWeatherDayWrap'
 
 const WheatherDay = ({ day, temperature, windSpeed }) => {
+  const dataStyle = {
+    minWidth: '83px',
+    display: 'flex',
+    justifyContent: 'space-between',
+  }
+  const dataWrapStyle = {
+    display: 'flex',
+  }
+
   return (
     <StyledWeatherDayWrap>
       <div style={{ flexGrow: '1' }}>
         <Text as="weatherData">{day}</Text>
       </div>
-      <div>
-        <WeatherIcon />
-        <Text as="weatherData">{`${temperature} C`}</Text>
-        <WeatherIcon />
-        <Text as="weatherData">{`${windSpeed} kn`}</Text>
+      <div style={dataWrapStyle}>
+        <div style={dataStyle}>
+          <WeatherIcon />
+          <Text as="weatherData">{`${temperature} C`}</Text>
+        </div>
+        <div style={dataStyle}>
+          <WeatherIcon />
+          <Text as="weatherData">{`${windSpeed} kn`}</Text>
+        </div>
       </div>
     </StyledWeatherDayWrap>
   )
