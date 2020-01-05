@@ -8,7 +8,7 @@ const WeatherDaily = ({ data }) => {
     <Card flexDirection="column" padding="15px">
       {data.map(x => (
         <WeatherDay
-          day="monday"
+          day={x.day}
           temperature={x.temperature}
           windSpeed={x.windSpeed}
         />
