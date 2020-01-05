@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import WeatherGraphic from '../WeatherGraphic/WeatherGraphic'
+import WeatherIcon from '../WeatherIcon/WeatherIcon'
 import Text from '../Text/Text'
+import Card from '../Card/Card'
 
 const WeatherImgAndTemp = ({ current }) => {
   return (
@@ -9,10 +11,18 @@ const WeatherImgAndTemp = ({ current }) => {
       <WeatherGraphic moonOrSun="moon" cloudCover={current.cloudCover} />
       <br />
       <br />
-      <Text centered isBold>
-        {`${current.temperature} C`}
-      </Text>
-      <Text centered>{current.summary}</Text>
+      <Card>
+        <Text centered isBold>
+          {`${current.temperature} C`}
+        </Text>
+        <Text centered>{current.summary}</Text>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <WeatherIcon />
+          <Text centered isBold>
+            {`${current.windSpeed} kn`}
+          </Text>
+        </div>
+      </Card>
       <br />
     </div>
   )
