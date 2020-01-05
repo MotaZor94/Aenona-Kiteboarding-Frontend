@@ -5,6 +5,10 @@ export default styled.div`
   ${({ weather }) =>
     weather
       ? css`
+          padding: 15px;
+          padding-top: 30px;
+          max-width: 500px;
+          margin: auto;
           overflow: hidden;
           @media (min-width: 800px) {
             width: 400px;
@@ -18,4 +22,3 @@ export default styled.div`
 
   position:relative;
 `
-// width: 40%;
