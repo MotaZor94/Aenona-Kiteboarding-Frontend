@@ -1,7 +1,9 @@
-import React from "react"
-import StyledFlexWrapper from "./StyledFlexWrapper"
-const FlexWrapper = ({ children }) => {
-  return <StyledFlexWrapper>{children}</StyledFlexWrapper>
+import React from 'react'
+import StyledFlexWrapper from './StyledFlexWrapper'
+const FlexWrapper = ({ children, spaceevenly }) => {
+  return (
+    <StyledFlexWrapper spaceevenly={spaceevenly}>{children}</StyledFlexWrapper>
+  )
 }
 
 export default FlexWrapper

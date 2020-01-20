@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components"
-import { theme } from "../../../theme"
+import styled, { css } from 'styled-components'
+import { theme } from '../../../theme'
 
 const WhiteBox = styled.div`
   display: flex;
@@ -17,11 +17,17 @@ const WhiteBox = styled.div`
     top
       ? css`
           top: 0;
-          border-bottom: 0.5px solid ${theme.colors.palette.blue.normal};
         `
       : css`
           bottom: 0;
-          border-top: 0.5px solid ${theme.colors.palette.blue.normal};
+        `}
+  ${({ padded }) =>
+    padded
+      ? css`
+          padding: 0.6em;
+        `
+      : css`
+          padding: unset;
         `}
 
   @media (min-width: 800px) {

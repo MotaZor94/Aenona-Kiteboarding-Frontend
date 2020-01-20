@@ -11,9 +11,7 @@ const WeatherMainSection = () => {
       <MainImgWrap weather>
         <WeatherImgAndTemp />
       </MainImgWrap>
-      <MainPanel>
-        <BookingForm />
-      </MainPanel>
+      <MainPanel></MainPanel>
     </MainSection>
   )
 }

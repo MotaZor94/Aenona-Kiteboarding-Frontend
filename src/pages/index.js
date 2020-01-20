@@ -23,6 +23,7 @@ import AboutImg from '../static/About.png'
 import RentalsImg from '../static/Rental.png'
 import LocationImg from '../static/Location.png'
 import LogoHorizontal from '../static/Logo_horiz_w.png'
+import LogoImg from '../static/logo.png'
 // TODO: NEED TO MOVE THOSE WRAPPERS DIRECT INSIDE OF DESKTOPNAV CAUSE IT LOOKS MESSY
 const IndexPage = () => {
   return (
@@ -52,9 +53,18 @@ const IndexPage = () => {
       <WhiteBox top>
         <Image src={LogoText} width="120px" />
       </WhiteBox>
+      <WhiteBox padded>
+        <FlexWrapper spaceevenly>
+          <Image src={WeatherImg} width="auto" />
+          <Image src={LocationImg} width="auto" />
+          <Image src={LogoImg} width="auto" />
+          <Image src={AboutImg} width="auto" />
+          <Image src={RentalsImg} width="auto" />
+        </FlexWrapper>
+      </WhiteBox>
       <HomeMainSection />
       <WeatherMainSection />
-      <Link to="/">Go to page 2</Link>
+      <Link to="/page-2">Go to page 2</Link>
     </>
   )
 }
