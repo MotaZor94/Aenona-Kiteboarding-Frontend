@@ -27,9 +27,7 @@ a {
     text-decoration: none;
 }
 
-a:not([class]) {
-    color: rgba(216, 12, 112, 1);
-}
+
 
 a[href*="mailto"] {
     word-break: break-word;

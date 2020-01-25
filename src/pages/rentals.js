@@ -34,19 +34,19 @@ const IndexPage = () => {
         <LinkWrapper>
           <FlexWrapper>
             <Image src={WeatherImg} width="20px" />
-            <Link to="/weather">Weather</Link>
+            <Link>Weather</Link>
           </FlexWrapper>
           <FlexWrapper>
             <Image src={RentalsImg} width="20px" />
-            <Link to="/rentals">Rentals</Link>
+            <Link>Rentals</Link>
           </FlexWrapper>
           <FlexWrapper>
             <Image src={LocationImg} width="20px" />
-            <Link to="/location">Location</Link>
+            <Link>Location</Link>
           </FlexWrapper>
           <FlexWrapper>
             <Image src={AboutImg} width="20px" />
-            <Link to="/about-us">About Us</Link>
+            <Link>About Us</Link>
           </FlexWrapper>
         </LinkWrapper>
       </DesktopNav>
@@ -63,6 +63,8 @@ const IndexPage = () => {
         </FlexWrapper>
       </WhiteBox>
       <HomeMainSection />
+      <WeatherMainSection />
+      <Link to="/page-2">Go to page 2</Link>
     </>
   )
 }

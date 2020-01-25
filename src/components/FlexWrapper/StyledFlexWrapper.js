@@ -4,11 +4,11 @@ const StyledFlexWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: row;
-  width: 100%;
   ${({ spaceevenly }) =>
     spaceevenly
       ? css`
           justify-content: space-evenly;
+          width: 100%;
         `
       : css`
           justify-content: center;

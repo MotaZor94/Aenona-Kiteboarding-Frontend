@@ -26,6 +26,15 @@ const BookingForm = ({ onChange }) => {
       />
       <br />
       <Text as="p" blue isBold>
+        LAST NAME
+      </Text>
+      <TextInput
+        type="text"
+        placeholder="Wick"
+        onChange={({ target }) => console.log(target.value)}
+      />
+      <br />
+      <Text as="p" blue isBold>
         EMAIL
       </Text>
       <TextInput

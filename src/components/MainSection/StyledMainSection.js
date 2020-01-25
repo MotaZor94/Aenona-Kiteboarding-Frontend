@@ -3,6 +3,12 @@ import styled, { css } from 'styled-components'
 export default styled.div`
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  overflow: scroll;
+  ::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
   ${({ backgroundImg, weather }) =>
     weather
       ? css`

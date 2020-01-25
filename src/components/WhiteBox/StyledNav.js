@@ -17,9 +17,11 @@ const WhiteBox = styled.div`
     top
       ? css`
           top: 0;
+          box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.05);
         `
       : css`
           bottom: 0;
+          box-shadpx 10px 1px rgba(0, 0, 0, 0.05);
         `}
   ${({ padded }) =>
     padded
