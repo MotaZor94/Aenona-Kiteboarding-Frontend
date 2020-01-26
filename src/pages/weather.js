@@ -7,7 +7,7 @@ import WeatherMainSection from '../components/WeatherMainSection/WeatherMainSect
 import DesktopNav from '../components/DesktopNav/DesktopNav'
 import DesktopNavContent from '../components/DesktopNav/DesktopNavContent'
 
-const SecondPage = () => (
+const Weather = () => (
   <Layout>
     <SEO title="Weather" />
     <DesktopNav>
@@ -22,4 +22,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default Weather

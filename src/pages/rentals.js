@@ -10,27 +10,45 @@ import SEO from '../components/seo'
 // import Logo from "../static/main.png"
 import '../static/global.css'
 import HomeMainSection from '../components/HomeMainSection/HomeMainSection'
+
+import WeatherMainSection from '../components/WeatherMainSection/WeatherMainSection'
 import WhiteBox from '../components/WhiteBox/WhiteBox'
 import Image from '../components/Image/Image'
 import LogoText from '../static/Tekst.png'
 import DesktopNav from '../components/DesktopNav/DesktopNav'
-import DesktopNavContent from '../components/DesktopNav/DesktopNavContent'
+import LinkWrapper from '../components/LinkWrapper/LinkWrapper'
 import FlexWrapper from '../components/FlexWrapper/FlexWrapper'
-
 import WeatherImg from '../static/Weather.png'
 import AboutImg from '../static/About.png'
 import RentalsImg from '../static/Rental.png'
 import LocationImg from '../static/Location.png'
 import LogoHorizontal from '../static/Logo_horiz_w.png'
 import LogoImg from '../static/logo.png'
-
-// TODO: put DesktopNav comp into Layout component?
+// TODO: NEED TO MOVE THOSE WRAPPERS DIRECT INSIDE OF DESKTOPNAV CAUSE IT LOOKS MESSY
 const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
       <DesktopNav>
-        <DesktopNavContent />
+        <Image src={LogoHorizontal} width="110px" />
+        <LinkWrapper>
+          <FlexWrapper>
+            <Image src={WeatherImg} width="20px" />
+            <Link>Weather</Link>
+          </FlexWrapper>
+          <FlexWrapper>
+            <Image src={RentalsImg} width="20px" />
+            <Link>Rentals</Link>
+          </FlexWrapper>
+          <FlexWrapper>
+            <Image src={LocationImg} width="20px" />
+            <Link>Location</Link>
+          </FlexWrapper>
+          <FlexWrapper>
+            <Image src={AboutImg} width="20px" />
+            <Link>About Us</Link>
+          </FlexWrapper>
+        </LinkWrapper>
       </DesktopNav>
       <WhiteBox top padded>
         <Image src={LogoText} width="120px" />
@@ -45,6 +63,8 @@ const IndexPage = () => {
         </FlexWrapper>
       </WhiteBox>
       <HomeMainSection />
+      <WeatherMainSection />
+      <Link to="/page-2">Go to page 2</Link>
     </>
   )
 }
