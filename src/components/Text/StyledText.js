@@ -12,7 +12,7 @@ const Text = styled.div`
       font-weight: 800;
     `}
   ${({ as }) =>
-    as === 'weatherData' &&
+    as === 'weather-data' &&
     css`
       font-size: 1em;
       font-weight: 800;
