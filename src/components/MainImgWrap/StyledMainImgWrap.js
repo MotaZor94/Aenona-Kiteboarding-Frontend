@@ -1,13 +1,19 @@
-import styled, { css } from "styled-components"
+import styled, { css } from 'styled-components'
 
 export default styled.div`
-  ${({ isRelative }) => isRelative && `position: relative`}
+  ${({ isRelative }) => isRelative && 'position: relative'}
   ${({ weather }) =>
     weather
       ? css`
+          padding: 15px;
+          padding-top: 30px;
+          max-width: 500px;
+          overflow: hidden;
           @media (min-width: 800px) {
-            width: 300px;
-            height: 60vh;
+            width: 400px;
+          }
+          @media (max-width: 800px) {
+            margin: auto;
           }
         `
       : css`
@@ -18,4 +24,3 @@ export default styled.div`
 
   position:relative;
 `
-// width: 40%;
