@@ -17,16 +17,16 @@ const WheatherDay = ({ day, temperature, windSpeed }) => {
   return (
     <StyledWeatherDayWrap>
       <div style={{ flexGrow: '1' }}>
-        <Text as="weatherData">{day}</Text>
+        <Text as="weather-data">{day}</Text>
       </div>
       <div style={dataWrapStyle}>
         <div style={dataStyle}>
           <WeatherIcon />
-          <Text as="weatherData">{`${temperature} C`}</Text>
+          <Text as="weather-data">{`${temperature} C`}</Text>
         </div>
         <div style={dataStyle}>
           <WeatherIcon />
-          <Text as="weatherData">{`${windSpeed} kn`}</Text>
+          <Text as="weather-data">{`${windSpeed} kn`}</Text>
         </div>
       </div>
     </StyledWeatherDayWrap>
@@ -35,8 +35,8 @@ const WheatherDay = ({ day, temperature, windSpeed }) => {
 
 WheatherDay.propTypes = {
   day: PropTypes.string.isRequired,
-  temperature: PropTypes.number.isRequired,
-  windSpeed: PropTypes.number.isRequired,
+  temperature: PropTypes.string.isRequired,
+  windSpeed: PropTypes.string.isRequired,
 }
 
 export default WheatherDay

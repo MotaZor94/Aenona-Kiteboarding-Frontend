@@ -6,8 +6,9 @@ import Card from '../Card/Card'
 const WeatherDaily = ({ data }) => {
   return (
     <Card flexDirection="column" padding="15px">
-      {data.map(x => (
+      {data.map((x, index) => (
         <WeatherDay
+          key={`weather-day-${index}`}
           day={x.day}
           temperature={x.temperature}
           windSpeed={x.windSpeed}

@@ -9,8 +9,10 @@ const WeatherLeftSection = ({ daily, hourly }) => {
     <div style={{ padding: '5px' }}>
       <Text isBold>Get to know your holidays in advance</Text>
       <br />
+      <br />
       <Text>Today hourly</Text>
       <WeatherHourly data={hourly} />
+      <br />
       <br />
       <Text>This week</Text>
       <WeatherDaily data={daily} />

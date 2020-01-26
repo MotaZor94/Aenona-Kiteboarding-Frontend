@@ -7,8 +7,9 @@ import Card from '../Card/Card'
 const WeatherHourly = ({ data }) => {
   return (
     <Card flexDirection="row" scroll="x">
-      {data.map(item => (
+      {data.map((item, index) => (
         <div
+          key={`hour-weather-${index}`}
           style={{
             display: 'flex',
             flexDirection: 'column',
@@ -16,14 +17,14 @@ const WeatherHourly = ({ data }) => {
             padding: '5px 15px',
           }}
         >
-          <Text isBold as="weatherData">
+          <Text isBold as="weather-data">
             {item.time}
           </Text>
           <WeatherIcon type="clearNight" />
-          <Text isBold as="weatherData">
+          <Text isBold as="weather-data">
             {`${item.temperature} C`}
           </Text>
-          <Text as="weatherData">{`${item.windSpeed} kn`}</Text>
+          <Text as="weather-data">{`${item.windSpeed} kn`}</Text>
         </div>
       ))}
     </Card>
